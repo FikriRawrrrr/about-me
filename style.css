@@ -1,0 +1,350 @@
+/* Font */
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Manrope', system-ui, -apple-system, sans-serif;
+  background: #eef5fa;
+  color: #1a2c3e;
+  padding: 2.5rem 2rem;
+  line-height: 1.55;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* Profile Card */
+.profile-card {
+  background: white;
+  border-radius: 32px;
+  padding: 2.5rem 2rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  box-shadow: 0 10px 25px rgba(37, 99, 128, 0.06), 0 2px 8px rgba(37, 99, 128, 0.03);
+  border: 1px solid #cde3ef;
+  transition: all 0.2s;
+}
+
+.profile-card:hover {
+  box-shadow: 0 15px 35px rgba(37, 99, 128, 0.12);
+  border-color: #b8d4e5;
+}
+
+.avatar img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 28px;
+  border: 4px solid white;
+  outline: 2px solid #7fb4ce;
+  margin-bottom: 1.2rem;
+  transition: 0.2s;
+}
+
+.avatar img:hover {
+  transform: scale(1.02);
+  outline-color: #3b82f6;
+}
+
+h1 {
+  font-size: 2.3rem;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  color: #0a2e42;
+  margin-bottom: 0.4rem;
+}
+
+.tagline {
+  color: #2c7cb6;
+  font-weight: 600;
+  font-size: 1rem;
+  background: #e3f0f7;
+  display: inline-block;
+  padding: 0.3rem 1.5rem;
+  border-radius: 50px;
+  margin-bottom: 1rem;
+}
+
+.bio {
+  color: #3a6c8a;
+  font-size: 1rem;
+  max-width: 480px;
+  margin: 0 auto;
+  line-height: 1.55;
+}
+
+/* Section */
+.section {
+  background: white;
+  border-radius: 28px;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 6px 15px rgba(37, 99, 128, 0.04);
+  border: 1px solid #d6e6f0;
+}
+
+h2 {
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin-bottom: 1.4rem;
+  padding-bottom: 0.4rem;
+  border-bottom: 2.5px solid #cde0ec;
+  display: inline-block;
+  letter-spacing: -0.3px;
+  color: #165a7a;
+}
+
+/* Data diri */
+.info-list {
+  list-style: none;
+}
+
+.info-list li {
+  padding: 0.9rem 0;
+  border-bottom: 1px dashed #d4e2ed;
+  font-size: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+}
+
+.info-list li:last-child {
+  border-bottom: none;
+}
+
+.info-list strong {
+  color: #1a6b96;
+  font-weight: 700;
+  min-width: 130px;
+  font-size: 1rem;
+}
+
+/* Timeline sekolah */
+.timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.timeline-item {
+  display: flex;
+  gap: 1.2rem;
+  flex-wrap: wrap;
+}
+
+.year {
+  background: #e5f0f7;
+  color: #1c6e9b;
+  padding: 0.3rem 1.2rem;
+  border-radius: 35px;
+  font-size: 0.85rem;
+  font-weight: 700;
+  min-width: 105px;
+  text-align: center;
+  letter-spacing: 0.3px;
+}
+
+.content h3 {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #0e4d6b;
+  margin-bottom: 0.3rem;
+}
+
+.content p {
+  font-size: 0.95rem;
+  color: #4f7d9c;
+  line-height: 1.45;
+}
+
+/* Alamat sekolah - bisa diklik ke Google Maps */
+.school-address {
+  font-size: 0.85rem;
+  color: #3a86b0;
+  margin-top: 0.5rem;
+  font-weight: 500;
+  background: #eef5fa;
+  display: inline-block;
+  padding: 0.25rem 1rem;
+  border-radius: 25px;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.school-address:hover {
+  background: #3a86b0;
+  color: white;
+  transform: translateX(3px);
+}
+
+/* Progress grid */
+.progress-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.3rem;
+}
+
+.progress-card {
+  background: #f7fbfe;
+  border-radius: 24px;
+  padding: 1.3rem 1.4rem;
+  border: 1px solid #d4e4ef;
+  transition: all 0.2s;
+}
+
+.progress-card:hover {
+  background: white;
+  border-color: #9bc2db;
+  transform: translateY(-4px);
+}
+
+.progress-card h3 {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #13658b;
+  margin-bottom: 0.8rem;
+}
+
+.progress-bar {
+  background: #ddeaf2;
+  border-radius: 40px;
+  height: 10px;
+  margin: 0.7rem 0;
+  overflow: hidden;
+}
+
+.progress-fill {
+  background: #3a86b0;
+  width: 0%;
+  height: 100%;
+  border-radius: 40px;
+  transition: width 0.4s ease;
+}
+
+.progress-card p {
+  font-size: 0.85rem;
+  color: #5789a8;
+  font-weight: 500;
+}
+
+/* Footer */
+.footer {
+  background: white;
+  border-radius: 28px;
+  padding: 1.5rem;
+  text-align: center;
+  border: 1px solid #d6e6f0;
+  margin-top: 0.5rem;
+}
+
+.footer p:first-child {
+  color: #3e789b;
+  font-size: 0.95rem;
+  margin-bottom: 0.6rem;
+}
+
+.social-links {
+  margin: 0.5rem 0;
+}
+
+.social-links a {
+  color: #5289ab;
+  text-decoration: none;
+  font-size: 0.95rem;
+  margin: 0 0.7rem;
+  transition: all 0.2s;
+}
+
+.social-links a:hover {
+  color: #1c6c97;
+  text-decoration: underline;
+}
+
+.copyright {
+  font-size: 0.8rem;
+  color: #7ea5c0;
+  margin-top: 0.7rem;
+}
+
+/* Animasi fade in */
+@keyframes gentleFade {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.profile-card,
+.section,
+.footer {
+  animation: gentleFade 0.45s ease forwards;
+}
+
+/* Responsive untuk tablet */
+@media (max-width: 768px) {
+  body {
+    padding: 1.5rem;
+  }
+  
+  .container {
+    max-width: 100%;
+  }
+  
+  h1 {
+    font-size: 1.8rem;
+  }
+  
+  .avatar img {
+    width: 150px;
+    height: 150px;
+  }
+  
+  h2 {
+    font-size: 1.4rem;
+  }
+}
+
+/* Responsive untuk HP */
+@media (max-width: 650px) {
+  body {
+    padding: 1rem;
+  }
+
+  .timeline-item {
+    flex-direction: column;
+    gap: 0.3rem;
+  }
+
+  .year {
+    width: fit-content;
+  }
+
+  .profile-card,
+  .section {
+    padding: 1.3rem;
+  }
+
+  .info-list strong {
+    min-width: 100%;
+  }
+  
+  .progress-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .school-address {
+    font-size: 0.75rem;
+    padding: 0.2rem 0.8rem;
+  }
+}
